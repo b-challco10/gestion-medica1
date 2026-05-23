@@ -1,16 +1,6 @@
-.pacientes-container {
-  width: 80%;
-  margin: 30px auto;
-  background-color: white;
-  padding: 25px;
-  border-radius: 8px;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-  
-}
-
 .pacientes-container h2 {
   margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
   color: #1e3a5f;
   font-weight: 700;
   font-size: 20px;
@@ -20,20 +10,71 @@
 .tabla-pacientes {
   width: 100%;
   border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #1f2a40;
 }
 
-.tabla-pacientes th,
-.tabla-pacientes td {
-  border: 1px solid #ddd;
-  padding: 12px;
-  text-align: center;
-  font-family: var(--font-roboto);
+.tabla-pacientes thead tr {
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
 }
 
 .tabla-pacientes th {
-  background-color: #f3f4f6;
+  color: white;
+  padding: 18px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  font-family: var(--font-roboto);
 }
 
-.tabla-pacientes tr:hover {
-  background-color: #f9fafb;
+.tabla-pacientes td {
+  padding: 20px 18px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  border-left: none;
+  border-right: none;
+  color: #dbeafe;
+  font-size: 15px;
+  font-family: var(--font-roboto);
+}
+
+.tabla-pacientes tbody tr {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.tabla-pacientes tbody tr:hover {
+  background: rgba(88, 149, 248, 0.1);
+}
+.btn-detalles {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-detalles:hover {
+  background: #1d4ed8;
+}
+
+.detalle-paciente {
+  margin-top: 25px;
+  background: #e6f0fc;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 5px solid #2563eb;
+  font-family: var(--font-roboto);
+}
+
+.detalle-paciente h3 {
+  margin-bottom: 15px;
+  color: #1d4ed8;
+}
+
+.detalle-paciente p {
+  margin-bottom: 8px;
+  color: #1e293b;
 }
